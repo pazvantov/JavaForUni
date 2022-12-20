@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.control.Button?>
+<GridPane alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.calculator.CalculatorController">
+
+    <VBox alignment="TOP_CENTER">
+
+        <Label text="Result:"/>
+
+        <TextField fx:id="Result" maxWidth="50" maxHeight="50"/>
+
+        <Label text="First Number:"/>
+
+        <TextField fx:id="Number1" maxWidth="50" maxHeight="50"/>
+
+        <Label text="Second Number:"/>
+
+        <TextField fx:id="Number2" maxWidth="50" maxHeight="50"/>
+
+        <Button text="+" onAction="#Add"  fx:id="buttonAdd"/>
+
+        <Button text="-" onAction="#Sub"  fx:id="buttonSub"/>
+
+        <Button text="*" onAction="#Mult"  fx:id="buttonMult"/>
+
+        <Button text="/" onAction="#Div"  fx:id="buttonDiv"/>
+
+    </VBox>
+
+
+</GridPane>
+
+
